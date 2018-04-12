@@ -1,0 +1,105 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>SP Airlines</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <link rel="stylesheet" href="EAD%20CSS.css">
+</head>
+
+<body>
+    <header id="header">
+        <p>SP Airlines</p>
+
+        <a href="#popup1" class="button" id="AdminLogin">Login as administrator</a>
+        <article id="popup1" class="popup1">
+
+            <a class="close1" href="#">&times;</a>
+            <article class="content1">
+                <form action="verifyUser.jsp" class="ALogin">
+                    <h4>Login as administrator:</h4>
+                    <h1>Login ID:</h1><br>
+                    <input type="text" name="loginid" class="AdminID" /><br>
+                    <h1>Password:</h1>
+                    <br>
+                    <input type="password" name="password" class="AdminPassword" /><br> <br>
+                    <input type="submit" name="btnSubmit" value="Login" class="LoginButton" />
+                </form>
+            </article>
+        </article>
+
+        <nav id="nav">
+            <a href="index.html">Home</a>/
+            <a href="Flight.html">Flight Details</a>/
+            <a href="Support.html">Support</a>
+        </nav>
+        <a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+
+    </header>
+
+    <!-- Three -->
+			<section id="three" class="wrapper">
+				<div class="inner">
+					<header class="align-center">
+						<h2>Customer Support</h2>
+						
+					</header>
+					<div class="image round left">
+						
+					</div>
+					<p>All our customer support hotlines are 24/7.</p>
+
+					<div class="image round right">
+						
+					</div>
+					<p>Queries on flight bookings: 6432 3413 <br>
+                    Queries on overseas returning flights: 6747 4242 <br>
+                    Technical Support: 6219 1279 <br>
+                    Others: 6411 9191 <br>
+                    </p>
+			
+			<a href="ViewComments.jsp" class="button">View all user comments</a>
+				</div>
+			</section>
+
+    <!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+
+					<h3>Leave a comment on our website!</h3>
+
+					<form action="updateComments.jsp">
+
+						<div class="field half first">
+							<label for="name">Name</label>
+							<input name="name" id="name" type="text" maxlength="30" placeholder="Name" required>
+						</div>
+						<div class="field half">
+							<label for="email">Email</label>
+							<input name="email" id="email" type="email" maxlength="50" placeholder="Email" required>
+						</div>
+						<div class="field">
+							<label for="message">Comment (Maximum 100 characters)</label>
+							<textarea name="message" id="message" rows="6" placeholder="Message" maxlength="100" required></textarea>
+						</div>
+						<ul class="actions">
+							<li><input value="Leave Comment" class="button alt" type="submit"></li>
+						</ul>
+					</form>
+
+					<div class="copyright">
+                &copy; SP Airlines 2017 All rights reserved.
+            </div>
+
+				</div>
+			</footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
